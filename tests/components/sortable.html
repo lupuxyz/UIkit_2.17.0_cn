@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Sortable - UIkit tests</title>
+
+        <script src="../_test.js"></script>
+        <script src="../../src/js/components/sortable.js"></script>
+        <style>
+
+            .test { height: 100px; }
+
+            .test-item > * {
+                display: block;
+                padding: 5px 15px;
+                background: #f0f0f0;
+                color: #444;
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        <div class="uk-container uk-container-center">
+
+            <h1>Sortable</h1>
+
+            <h2>Grid</h2>
+
+            <ul class="uk-sortable uk-grid uk-grid-width-1-5" data-uk-sortable="{handleClass:'uk-panel'}" data-uk-grid-margin>
+                <li><div class="uk-panel uk-panel-box test"><a href="http://www.getuikit.com">Test 1</a></div></li>
+                <li><a class="uk-panel uk-panel-box test" href="http://www.getuikit.com">Test 2</a></li>
+                <li><div class="uk-panel uk-panel-box test">Test 3</div></li>
+                <li><div class="uk-panel uk-panel-box test">Test 4</div></li>
+                <li><div class="uk-panel uk-panel-box test">Test 5</div></li>
+                <li><div class="uk-panel uk-panel-box test">Test 6</div></li>
+                <li><div class="uk-panel uk-panel-box test">Test 7</div></li>
+                <li><div class="uk-panel uk-panel-box test">Test 8</div></li>
+                <li><div class="uk-panel uk-panel-box test">Test 9</div></li>
+                <li><div class="uk-panel uk-panel-box test">Test 10</div></li>
+                <li><div class="uk-panel uk-panel-box test">Test 11</div></li>
+                <li><div class="uk-panel uk-panel-box test">Test 12</div></li>
+            </ul>
+
+            <h2>Stacked</h2>
+
+            <div class="uk-sortable uk-margin" data-uk-sortable>
+                <div class="uk-margin">
+                    <div class="uk-panel uk-panel-box">Test 1</div>
+                </div>
+                <div class="uk-margin">
+                    <div class="uk-panel uk-panel-box">Test 2</div>
+                </div>
+                <div class="uk-margin">
+                    <div class="uk-panel uk-panel-box">Test 3</div>
+                </div>
+                <div class="uk-margin">
+                    <div class="uk-panel uk-panel-box">Test 4</div>
+                </div>
+                <div class="uk-margin">
+                    <div class="uk-panel uk-panel-box">Test 5</div>
+                </div>
+            </div>
+
+            <h2>Nav</h2>
+
+            <div class="uk-width-medium-1-4">
+
+                <ul class="uk-sortable uk-nav uk-nav-side" data-uk-sortable="{dragCustomClass:'test-item'}">
+                    <li class="uk-active"><a href="#">Active</a></li>
+                    <li><a href="#">Item</a></li>
+                    <li><a href="#">Item</a></li>
+                    <li><a href="#">Item</a></li>
+                    <li><a href="#">Item</a></li>
+                    <li><a href="#">Item</a></li>
+                    <li><a href="#">Item</a></li>
+                    <li><a href="#">Item</a></li>
+                    <li><a href="#">Item</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+    </body>
+</html>
